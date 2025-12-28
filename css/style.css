@@ -5,6 +5,7 @@
   padding: 0;
 }
 
+/* BASE */
 body {
   font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial;
   background: #0e1117;
@@ -14,37 +15,44 @@ body {
   padding: 40px 30px;
 }
 
-/* NAVIGATION */
+/* NAV */
 .site-nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-bottom: 40px;
+  padding-bottom: 18px;
+  margin-bottom: 45px;
+  border-bottom: 1px solid #21262d;
 }
 
 .brand {
-  font-size: 22px;
-  font-weight: 800;
-  text-decoration: none;
+  font-size: 26px;
+  font-weight: 900;
   color: #facc15;
+  text-decoration: none;
+  letter-spacing: -1px;
+}
+
+.nav-right {
+  display: flex;
+  gap: 22px;
 }
 
 .nav-right a {
-  margin-left: 22px;
   text-decoration: none;
   color: #9ca3af;
-  font-size: 14px;
-  letter-spacing: 0.5px;
+  font-size: 13px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
 }
 
 .nav-right a:hover {
   color: #facc15;
 }
 
-
 /* HERO */
 .hero {
-  margin-bottom: 50px;
+  margin-bottom: 55px;
 }
 
 .hero h1 {
@@ -68,7 +76,7 @@ body {
   background: #161b22;
   border-radius: 16px;
   overflow: hidden;
-  margin-bottom: 50px;
+  margin-bottom: 60px;
 }
 
 .featured img {
@@ -131,8 +139,8 @@ body {
 
 .hot-takes h3 {
   margin-bottom: 18px;
-  letter-spacing: 2px;
   font-size: 14px;
+  letter-spacing: 2px;
   color: #facc15;
 }
 
@@ -144,27 +152,6 @@ body {
   margin-bottom: 14px;
   font-size: 17px;
   line-height: 1.5;
-  color: #e5e7eb;
-  cursor: default;
-}
-
-
-/* LATEST */
-.latest h3 {
-  margin-bottom: 18px;
-}
-
-.latest-item {
-  display: block;
-  padding: 20px;
-  background: #161b22;
-  border-radius: 12px;
-  text-decoration: none;
-  color: inherit;
-}
-
-.latest-item h4 {
-  margin: 8px 0;
 }
 
 /* CATEGORIES */
@@ -176,7 +163,7 @@ body {
 }
 
 .category-block h3 {
-  font-size: 15px;
+  font-size: 14px;
   letter-spacing: 1.5px;
   color: #facc15;
   margin-bottom: 15px;
@@ -200,4 +187,22 @@ body {
 
 .category-item:hover {
   color: #facc15;
+}
+
+/* LATEST */
+.latest h3 {
+  margin-bottom: 18px;
+}
+
+.latest-item {
+  display: block;
+  padding: 20px;
+  background: #161b22;
+  border-radius: 12px;
+  text-decoration: none;
+  color: inherit;
+}
+
+.latest-item h4 {
+  margin: 8px 0;
 }
