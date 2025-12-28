@@ -1,13 +1,17 @@
-/* RESET */
+/* =========================
+   RESET
+========================= */
 * {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
 }
 
-/* BASE */
+/* =========================
+   BASE
+========================= */
 body {
-  font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial;
+  font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
   background: #0e1117;
   color: #e5e7eb;
   max-width: 1100px;
@@ -15,7 +19,13 @@ body {
   padding: 40px 30px;
 }
 
-/* NAV */
+a {
+  color: inherit;
+}
+
+/* =========================
+   NAVIGATION
+========================= */
 .site-nav {
   display: flex;
   justify-content: space-between;
@@ -50,7 +60,9 @@ body {
   color: #facc15;
 }
 
-/* HERO */
+/* =========================
+   HERO
+========================= */
 .hero {
   margin-bottom: 55px;
 }
@@ -68,7 +80,9 @@ body {
   max-width: 620px;
 }
 
-/* FEATURED */
+/* =========================
+   FEATURED
+========================= */
 .featured {
   display: grid;
   grid-template-columns: 1.1fr 1fr;
@@ -99,7 +113,9 @@ body {
   line-height: 1.6;
 }
 
-/* TAGS */
+/* =========================
+   TAGS & META
+========================= */
 .tag {
   display: inline-block;
   background: #21262d;
@@ -113,14 +129,15 @@ body {
   color: #fb7185;
 }
 
-/* META */
 .meta {
   font-size: 13px;
   color: #9ca3af;
   margin-bottom: 12px;
 }
 
-/* LINKS */
+/* =========================
+   LINKS
+========================= */
 .read-more {
   display: inline-block;
   margin-top: 14px;
@@ -129,7 +146,13 @@ body {
   font-weight: 600;
 }
 
-/* HOT TAKES */
+.read-more:hover {
+  text-decoration: underline;
+}
+
+/* =========================
+   HOT TAKES
+========================= */
 .hot-takes {
   background: #0b0f14;
   border-left: 5px solid #facc15;
@@ -142,6 +165,7 @@ body {
   font-size: 14px;
   letter-spacing: 2px;
   color: #facc15;
+  text-transform: uppercase;
 }
 
 .hot-takes ul {
@@ -154,7 +178,84 @@ body {
   line-height: 1.5;
 }
 
-/* CATEGORIES */
+/* =========================
+   HOME OPINIONS
+========================= */
+.home-opinions {
+  margin: 60px 0;
+}
+
+.home-opinions h3 {
+  margin-bottom: 20px;
+  font-size: 14px;
+  letter-spacing: 2px;
+  color: #facc15;
+  text-transform: uppercase;
+}
+
+.opinion-item {
+  display: block;
+  padding: 16px 0;
+  border-bottom: 1px solid #21262d;
+  text-decoration: none;
+  color: #e5e7eb;
+  font-size: 18px;
+}
+
+.opinion-item span {
+  display: block;
+  font-size: 13px;
+  color: #9ca3af;
+  margin-top: 6px;
+}
+
+.opinion-item:hover {
+  color: #facc15;
+}
+
+/* =========================
+   HOME SERIES
+========================= */
+.home-series {
+  background: #0b0f14;
+  padding: 28px 30px;
+  border-radius: 14px;
+  margin: 60px 0;
+}
+
+.home-series h3 {
+  margin-bottom: 18px;
+  font-size: 14px;
+  letter-spacing: 2px;
+  color: #facc15;
+  text-transform: uppercase;
+}
+
+.series-item {
+  display: block;
+  text-decoration: none;
+  color: #e5e7eb;
+  font-size: 20px;
+}
+
+.series-item strong {
+  display: block;
+}
+
+.series-item span {
+  display: block;
+  font-size: 14px;
+  color: #9ca3af;
+  margin-top: 6px;
+}
+
+.series-item:hover {
+  color: #facc15;
+}
+
+/* =========================
+   CATEGORIES
+========================= */
 .categories {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
@@ -189,7 +290,9 @@ body {
   color: #facc15;
 }
 
-/* LATEST */
+/* =========================
+   LATEST
+========================= */
 .latest h3 {
   margin-bottom: 18px;
 }
@@ -207,7 +310,9 @@ body {
   margin: 8px 0;
 }
 
-/* ARTICLE PAGE */
+/* =========================
+   ARTICLE PAGES
+========================= */
 .article {
   max-width: 720px;
   margin: 0 auto 80px;
@@ -250,7 +355,7 @@ body {
   color: #9ca3af;
 }
 
-/* HERO IMAGE */
+/* ARTICLE HERO */
 .article-hero {
   margin: 40px 0;
 }
@@ -266,7 +371,7 @@ body {
   margin-top: 8px;
 }
 
-/* CONTENT */
+/* ARTICLE CONTENT */
 .article-content p {
   font-size: 18px;
   line-height: 1.8;
@@ -288,7 +393,9 @@ body {
   font-style: italic;
 }
 
-/* OPINION ARTICLE */
+/* =========================
+   OPINION ARTICLE
+========================= */
 .opinion-article .article-header h1 {
   font-size: 38px;
 }
@@ -300,11 +407,9 @@ body {
   color: #f3f4f6;
 }
 
-.tag.opinion {
-  color: #fb7185;
-  border-color: #fb7185;
-}
-/* SERIES NAV */
+/* =========================
+   SERIES NAV
+========================= */
 .series-nav {
   display: flex;
   gap: 14px;
@@ -324,68 +429,4 @@ body {
 .series-nav .active {
   color: #facc15;
   border-color: #facc15;
-}
-/* HOME OPINIONS */
-.home-opinions {
-  margin-bottom: 60px;
-}
-
-.home-opinions h3 {
-  margin-bottom: 20px;
-  font-size: 14px;
-  letter-spacing: 2px;
-  color: #facc15;
-}
-
-.opinion-item {
-  display: block;
-  padding: 16px 0;
-  border-bottom: 1px solid #21262d;
-  color: #e5e7eb;
-  text-decoration: none;
-  font-size: 18px;
-}
-
-.opinion-item span {
-  display: block;
-  font-size: 13px;
-  color: #9ca3af;
-  margin-top: 6px;
-}
-
-.opinion-item:hover {
-  color: #facc15;
-}
-
-/* HOME SERIES */
-.home-series {
-  background: #0b0f14;
-  padding: 28px 30px;
-  border-radius: 14px;
-  margin-bottom: 70px;
-}
-
-.home-series h3 {
-  margin-bottom: 18px;
-  font-size: 14px;
-  letter-spacing: 2px;
-  color: #facc15;
-}
-
-.series-item {
-  display: block;
-  text-decoration: none;
-  color: #e5e7eb;
-  font-size: 20px;
-}
-
-.series-item span {
-  display: block;
-  font-size: 14px;
-  color: #9ca3af;
-  margin-top: 8px;
-}
-
-.series-item:hover {
-  color: #facc15;
 }
