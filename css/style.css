@@ -14,6 +14,34 @@ body {
   padding: 40px 30px;
 }
 
+/* NAVIGATION */
+.site-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 40px;
+}
+
+.brand {
+  font-size: 22px;
+  font-weight: 800;
+  text-decoration: none;
+  color: #facc15;
+}
+
+.nav-right a {
+  margin-left: 22px;
+  text-decoration: none;
+  color: #9ca3af;
+  font-size: 14px;
+  letter-spacing: 0.5px;
+}
+
+.nav-right a:hover {
+  color: #facc15;
+}
+
+
 /* HERO */
 .hero {
   margin-bottom: 50px;
