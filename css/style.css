@@ -206,3 +206,84 @@ body {
 .latest-item h4 {
   margin: 8px 0;
 }
+
+/* ARTICLE PAGE */
+.article {
+  max-width: 720px;
+  margin: 0 auto 80px;
+}
+
+.article-back {
+  display: inline-block;
+  margin-bottom: 30px;
+  color: #9ca3af;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+.article-back:hover {
+  color: #facc15;
+}
+
+.article-header {
+  margin-bottom: 35px;
+}
+
+.article-tag {
+  display: inline-block;
+  background: #21262d;
+  color: #facc15;
+  font-size: 12px;
+  padding: 4px 10px;
+  border-radius: 999px;
+  margin-bottom: 12px;
+}
+
+.article-header h1 {
+  font-size: 36px;
+  line-height: 1.2;
+  margin-bottom: 10px;
+}
+
+.article-meta {
+  font-size: 14px;
+  color: #9ca3af;
+}
+
+/* HERO IMAGE */
+.article-hero {
+  margin: 40px 0;
+}
+
+.article-hero img {
+  width: 100%;
+  border-radius: 14px;
+}
+
+.article-hero figcaption {
+  font-size: 13px;
+  color: #9ca3af;
+  margin-top: 8px;
+}
+
+/* CONTENT */
+.article-content p {
+  font-size: 18px;
+  line-height: 1.8;
+  margin-bottom: 24px;
+  color: #e5e7eb;
+}
+
+.article-content h2 {
+  font-size: 22px;
+  margin: 40px 0 14px;
+}
+
+.article-content blockquote {
+  border-left: 4px solid #facc15;
+  padding-left: 20px;
+  margin: 40px 0;
+  font-size: 18px;
+  color: #d1d5db;
+  font-style: italic;
+}
