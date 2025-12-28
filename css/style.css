@@ -1,128 +1,57 @@
-/* RESET */
-* {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Cricket Doesn’t Need Noise</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
 
-body {
-  font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial;
-  background: #0f1115;
-  color: #e5e7eb;
-  max-width: 1100px;
-  margin: auto;
-  padding: 30px;
-}
+  <!-- HERO -->
+  <section class="hero">
+    <h1>CRICKET DOESN’T NEED NOISE.</h1>
+    <p>Serious thoughts on a game that doesn’t need the circus.</p>
+  </section>
 
-/* HERO */
-.hero {
-  margin-bottom: 50px;
-}
+  <!-- FEATURED -->
+  <section class="featured">
+    <img src="images/ind-vs-eng.jpg" alt="India vs England">
+    <div class="featured-content">
+      <span class="tag">Match Preview</span>
+      <h2>India vs England – Match Preview</h2>
+      <p class="meta">29 Dec 2025</p>
+      <p>
+        India faces England in a high-stakes contest.
+        Conditions, temperament and selection will matter
+        more than hype.
+      </p>
+      <a href="posts/india-vs-eng-preview.html" class="read-more">
+        Read analysis →
+      </a>
+    </div>
+  </section>
 
-.hero h1 {
-  font-size: 48px;
-  font-weight: 800;
-  letter-spacing: -1px;
-}
+  <!-- HOT TAKES -->
+  <section class="hot-takes">
+    <h3>HOT TAKES</h3>
+    <ul>
+      <li>Why modern cricket coverage is broken</li>
+      <li>Stop calling every knock “special”</li>
+    </ul>
+  </section>
 
-.hero p {
-  margin-top: 10px;
-  font-size: 16px;
-  color: #9ca3af;
-  max-width: 600px;
-}
+  <!-- LATEST -->
+  <section class="latest">
+    <h3>Latest</h3>
 
-/* FEATURED */
-.featured {
-  display: grid;
-  grid-template-columns: 1.2fr 1fr;
-  gap: 30px;
-  background: #16181d;
-  border-radius: 14px;
-  overflow: hidden;
-  margin-bottom: 50px;
-}
+    <a href="posts/first-post.html" class="latest-item">
+      <span class="tag opinion">Opinion</span>
+      <h4>Welcome to My Cricket Blog</h4>
+      <p class="meta">28 Dec 2025</p>
+    </a>
 
-.featured img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-}
+  </section>
 
-.featured-content {
-  padding: 25px;
-}
-
-.featured-content h2 {
-  margin: 10px 0;
-}
-
-.meta {
-  font-size: 13px;
-  color: #9ca3af;
-  margin-bottom: 10px;
-}
-
-.read-more {
-  display: inline-block;
-  margin-top: 15px;
-  color: #facc15;
-  text-decoration: none;
-  font-weight: 600;
-}
-
-/* TAGS */
-.tag {
-  display: inline-block;
-  background: #272a31;
-  color: #facc15;
-  padding: 4px 8px;
-  font-size: 12px;
-  border-radius: 6px;
-}
-
-.tag.opinion {
-  color: #fb7185;
-}
-
-/* HOT TAKES */
-.hot-takes {
-  background: #1c1f26;
-  padding: 25px;
-  border-radius: 14px;
-  margin-bottom: 50px;
-}
-
-.hot-takes h3 {
-  margin-bottom: 15px;
-  letter-spacing: 1px;
-}
-
-.hot-takes ul {
-  list-style: none;
-}
-
-.hot-takes li {
-  margin-bottom: 12px;
-  font-size: 16px;
-}
-
-/* LATEST */
-.latest h3 {
-  margin-bottom: 20px;
-}
-
-.latest-item {
-  display: block;
-  padding: 20px;
-  background: #16181d;
-  border-radius: 12px;
-  text-decoration: none;
-  color: inherit;
-  margin-bottom: 15px;
-}
-
-.latest-item h4 {
-  margin: 8px 0;
-}
-s
+</body>
+</html>
