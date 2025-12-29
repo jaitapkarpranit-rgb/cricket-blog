@@ -430,3 +430,15 @@ a {
   color: #facc15;
   border-color: #facc15;
 }
+/* FEATURED OPINION */
+.featured-opinion {
+  padding: 22px 0;
+  font-size: 22px;
+  border-bottom: 1px solid #21262d;
+}
+
+.featured-opinion span {
+  font-size: 14px;
+  color: #9ca3af;
+  margin-top: 10px;
+}
