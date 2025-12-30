@@ -215,6 +215,83 @@ a {
 }
 
 /* =========================
+   FEATURED GRID (HOMEPAGE)
+========================= */
+
+.featured-grid {
+  display: grid;
+  grid-template-columns: 2.2fr 1fr;
+  gap: 30px;
+  margin: 60px 0;
+}
+
+/* BIG FEATURE */
+.feature-main {
+  background: #161b22;
+  padding: 40px;
+  border-radius: 18px;
+  text-decoration: none;
+  color: #e5e7eb;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  min-height: 320px;
+}
+
+.feature-main:hover {
+  outline: 2px solid #facc15;
+}
+
+.feature-tag {
+  font-size: 12px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: #facc15;
+  margin-bottom: 14px;
+}
+
+.feature-main h2 {
+  font-size: 34px;
+  line-height: 1.2;
+  margin-bottom: 14px;
+}
+
+.feature-main p {
+  font-size: 16px;
+  color: #d1d5db;
+  max-width: 520px;
+}
+
+/* SIDE COLUMN */
+.feature-side {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+/* SMALL BOXES */
+.feature-small {
+  background: #0b0f14;
+  border: 1px dashed #21262d;
+  border-radius: 16px;
+  min-height: 145px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #9ca3af;
+  font-size: 14px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.coming-soon span {
+  opacity: 0.8;
+}
+
+
+
+
+/* =========================
    HOME SERIES
 ========================= */
 .home-series {
