@@ -38,7 +38,7 @@ a {
 .brand {
   font-size: 26px;
   font-weight: 900;
-  color: #0755b9;
+  color: #04a32b;
   text-decoration: none;
   letter-spacing: -1px;
   
@@ -58,7 +58,7 @@ a {
 }
 
 .nav-right a:hover {
-  color: #0755b9;
+  color: #04a32b;
 }
 
 /* =========================
@@ -120,7 +120,7 @@ a {
 .tag {
   display: inline-block;
   background: #21262d;
-  color: #0755b9;
+  color: #04a32b;
   padding: 4px 8px;
   font-size: 12px;
   border-radius: 6px;
@@ -142,7 +142,7 @@ a {
 .read-more {
   display: inline-block;
   margin-top: 14px;
-  color: #0755b9;
+  color: #04a32b;
   text-decoration: none;
   font-weight: 600;
 }
@@ -156,7 +156,7 @@ a {
 ========================= */
 .hot-takes {
   background: #0b0f14;
-  border-left: 5px solid #0755b9;
+  border-left: 5px solid #04a32b;
   padding: 28px 30px;
   margin-bottom: 60px;
 }
@@ -165,7 +165,7 @@ a {
   margin-bottom: 18px;
   font-size: 14px;
   letter-spacing: 2px;
-  color: #0755b9;
+  color: #04a32b;
   text-transform: uppercase;
 }
 
@@ -190,7 +190,7 @@ a {
   margin-bottom: 20px;
   font-size: 14px;
   letter-spacing: 2px;
-  color: #0755b9;
+  color: #04a32b;
   text-transform: uppercase;
 }
 
@@ -211,7 +211,7 @@ a {
 }
 
 .opinion-item:hover {
-  color: #0755b9;
+  color: #04a32b;
 }
 
 
@@ -229,7 +229,7 @@ a {
   margin-bottom: 18px;
   font-size: 14px;
   letter-spacing: 2px;
-  color: #0755b9;
+  color: #04a32b;
   text-transform: uppercase;
 }
 
@@ -252,7 +252,7 @@ a {
 }
 
 .series-item:hover {
-  color: #0755b9;
+  color: #04a32b;
 }
 
 /* =========================
@@ -268,7 +268,7 @@ a {
 .category-block h3 {
   font-size: 14px;
   letter-spacing: 1.5px;
-  color: #0755b9;
+  color: #04a32b;
   margin-bottom: 15px;
 }
 
@@ -289,7 +289,7 @@ a {
 }
 
 .category-item:hover {
-  color: #0755b9;
+  color: #04a32b;
 }
 
 /* =========================
@@ -329,7 +329,7 @@ a {
 }
 
 .article-back:hover {
-  color: #0755b9;
+  color: #04a32b;
 }
 
 .article-header {
@@ -339,7 +339,7 @@ a {
 .article-tag {
   display: inline-block;
   background: #21262d;
-  color: #0755b9;
+  color: #04a32b;
   font-size: 12px;
   padding: 4px 10px;
   border-radius: 999px;
@@ -387,7 +387,7 @@ a {
 }
 
 .article-content blockquote {
-  border-left: 4px solid #0755b9;
+  border-left: 4px solid #04a32b;
   padding-left: 20px;
   margin: 40px 0;
   font-size: 18px;
@@ -429,8 +429,8 @@ a {
 }
 
 .series-nav .active {
-  color: #0755b9;
-  border-color: #0755b9;
+  color: #04a32b;
+  border-color: #04a32b;
 }
 /* FEATURED OPINION */
 .featured-opinion {
