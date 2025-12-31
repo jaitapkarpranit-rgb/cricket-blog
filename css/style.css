@@ -470,14 +470,14 @@ a {
 }
 
 .feature-main:hover {
-  outline: 2px solid #facc15;
+  outline: 2px solid #04a32b;
 }
 
 .feature-tag {
   font-size: 12px;
   letter-spacing: 1px;
   text-transform: uppercase;
-  color: #facc15;
+  color: #04a32b;
   margin-bottom: 14px;
 }
 
