@@ -1,9 +1,15 @@
+/* =========================
+   RESET
+========================= */
 * {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
 }
 
+/* =======================
+   BASE
+========================= */
 body {
   font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
   background: #0e1117;
@@ -13,84 +19,141 @@ body {
   padding: 40px 30px;
 }
 
-a { color: inherit; text-decoration: none; }
+a {
+  color: inherit;
+}
 
-/* NAV */
+/* =========================
+   NAVIGATION
+========================= */
 .site-nav {
   display: flex;
   justify-content: space-between;
-  border-bottom: 1px solid #21262d;
+  align-items: center;
   padding-bottom: 18px;
   margin-bottom: 45px;
+  border-bottom: 1px solid #21262d;
 }
 
 .brand {
   font-size: 26px;
   font-weight: 900;
   color: #0755b9;
+  text-decoration: none;
+  letter-spacing: -1px;
+  
+}
+
+.nav-right {
+  display: flex;
+  gap: 22px;
 }
 
 .nav-right a {
-  margin-left: 20px;
-  font-size: 13px;
-  text-transform: uppercase;
+  text-decoration: none;
   color: #9ca3af;
+  font-size: 13px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
 }
 
-.nav-right a:hover { color: #0755b9; }
+.nav-right a:hover {
+  color: #0755b9;
+}
 
-/* FEATURED GRID */
-.featured-grid {
+/* =========================
+   HERO
+========================= */
+.hero {
+  margin-bottom: 55px;
+}
+
+.hero h1 {
+  font-size: 48px;
+  font-weight: 800;
+  letter-spacing: -1px;
+}
+
+.hero p {
+  margin-top: 12px;
+  font-size: 16px;
+  color: #9ca3af;
+  max-width: 620px;
+}
+
+/* =========================
+   FEATURED
+========================= */
+.featured {
   display: grid;
-  grid-template-columns: 2.2fr 1fr;
+  grid-template-columns: 1.1fr 1fr;
   gap: 30px;
+  background: #161b22;
+  border-radius: 16px;
+  overflow: hidden;
   margin-bottom: 60px;
 }
 
-.feature-main {
-  background: #161b22;
-  padding: 40px;
-  border-radius: 18px;
-  min-height: 320px;
+.featured img {
+  width: 100%;
+  height: 320px;
+  object-fit: cover;
 }
 
-.feature-main:hover { outline: 2px solid #0755b9; }
+.featured-content {
+  padding: 28px;
+}
 
-.feature-tag {
-  font-size: 12px;
+.featured-content h2 {
+  margin: 8px 0 10px;
+  font-size: 28px;
+}
+
+.excerpt {
+  color: #d1d5db;
+  line-height: 1.6;
+}
+
+/* =========================
+   TAGS & META
+========================= */
+.tag {
+  display: inline-block;
+  background: #21262d;
   color: #0755b9;
-  text-transform: uppercase;
+  padding: 4px 8px;
+  font-size: 12px;
+  border-radius: 6px;
+}
+
+.tag.opinion {
+  color: #fb7185;
+}
+
+.meta {
+  font-size: 13px;
+  color: #9ca3af;
   margin-bottom: 12px;
 }
 
-.feature-main h2 {
-  font-size: 34px;
-  margin-bottom: 14px;
+/* =========================
+   LINKS
+========================= */
+.read-more {
+  display: inline-block;
+  margin-top: 14px;
+  color: #0755b9;
+  text-decoration: none;
+  font-weight: 600;
 }
 
-.feature-main p { color: #d1d5db; }
-
-.feature-side {
-  display: flex;
-  flex-direction: column;
-  gap: 24px;
+.read-more:hover {
+  text-decoration: underline;
 }
 
-.feature-small {
-  background: #0b0f14;
-  border: 1px dashed #21262d;
-  border-radius: 16px;
-  min-height: 145px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-  color: #9ca3af;
-}
-
-.coming-soon { opacity: 0.7; }
-
-/* HOT TAKES */
+/* =========================
+   HOT TAKES
+========================= */
 .hot-takes {
   background: #0b0f14;
   border-left: 5px solid #0755b9;
@@ -99,25 +162,284 @@ a { color: inherit; text-decoration: none; }
 }
 
 .hot-takes h3 {
-  color: #0755b9;
-  font-size: 14px;
   margin-bottom: 18px;
+  font-size: 14px;
+  letter-spacing: 2px;
+  color: #0755b9;
   text-transform: uppercase;
+}
+
+.hot-takes ul {
+  list-style: none;
 }
 
 .hot-takes li {
   margin-bottom: 14px;
   font-size: 17px;
+  line-height: 1.5;
 }
 
-/* CATEGORIES */
+/* =========================
+   HOME OPINIONS
+========================= */
+.home-opinions {
+  margin: 60px 0;
+}
+
+.home-opinions h3 {
+  margin-bottom: 20px;
+  font-size: 14px;
+  letter-spacing: 2px;
+  color: #0755b9;
+  text-transform: uppercase;
+}
+
+.opinion-item {
+  display: block;
+  padding: 16px 0;
+  border-bottom: 1px solid #21262d;
+  text-decoration: none;
+  color: #e5e7eb;
+  font-size: 18px;
+}
+
+.opinion-item span {
+  display: block;
+  font-size: 13px;
+  color: #9ca3af;
+  margin-top: 6px;
+}
+
+.opinion-item:hover {
+  color: #0755b9;
+}
+
+/* =========================
+   HOME SERIES
+========================= */
+.home-series {
+  background: #0b0f14;
+  padding: 28px 30px;
+  border-radius: 14px;
+  margin: 60px 0;
+}
+
+.home-series h3 {
+  margin-bottom: 18px;
+  font-size: 14px;
+  letter-spacing: 2px;
+  color: #0755b9;
+  text-transform: uppercase;
+}
+
+.series-item {
+  display: block;
+  text-decoration: none;
+  color: #e5e7eb;
+  font-size: 20px;
+}
+
+.series-item strong {
+  display: block;
+}
+
+.series-item span {
+  display: block;
+  font-size: 14px;
+  color: #9ca3af;
+  margin-top: 6px;
+}
+
+.series-item:hover {
+  color: #0755b9;
+}
+
+/* =========================
+   CATEGORIES
+========================= */
 .categories {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
   gap: 40px;
+  margin-bottom: 60px;
 }
 
 .category-block h3 {
+  font-size: 14px;
+  letter-spacing: 1.5px;
   color: #0755b9;
+  margin-bottom: 15px;
+}
+
+.category-item {
+  display: block;
+  padding: 12px 0;
+  border-bottom: 1px solid #21262d;
+  color: #e5e7eb;
+  text-decoration: none;
+  font-size: 16px;
+}
+
+.category-item span {
+  display: block;
+  font-size: 12px;
+  color: #9ca3af;
+  margin-top: 4px;
+}
+
+.category-item:hover {
+  color: #0755b9;
+}
+
+/* =========================
+   LATEST
+========================= */
+.latest h3 {
+  margin-bottom: 18px;
+}
+
+.latest-item {
+  display: block;
+  padding: 20px;
+  background: #161b22;
+  border-radius: 12px;
+  text-decoration: none;
+  color: inherit;
+}
+
+.latest-item h4 {
+  margin: 8px 0;
+}
+
+/* =========================
+   ARTICLE PAGES
+========================= */
+.article {
+  max-width: 720px;
+  margin: 0 auto 80px;
+}
+
+.article-back {
+  display: inline-block;
+  margin-bottom: 30px;
+  color: #9ca3af;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+.article-back:hover {
+  color: #0755b9;
+}
+
+.article-header {
+  margin-bottom: 35px;
+}
+
+.article-tag {
+  display: inline-block;
+  background: #21262d;
+  color: #0755b9;
+  font-size: 12px;
+  padding: 4px 10px;
+  border-radius: 999px;
   margin-bottom: 12px;
+}
+
+.article-header h1 {
+  font-size: 36px;
+  line-height: 1.2;
+  margin-bottom: 10px;
+}
+
+.article-meta {
+  font-size: 14px;
+  color: #9ca3af;
+}
+
+/* ARTICLE HERO */
+.article-hero {
+  margin: 40px 0;
+}
+
+.article-hero img {
+  width: 100%;
+  border-radius: 14px;
+}
+
+.article-hero figcaption {
+  font-size: 13px;
+  color: #9ca3af;
+  margin-top: 8px;
+}
+
+/* ARTICLE CONTENT */
+.article-content p {
+  font-size: 18px;
+  line-height: 1.8;
+  margin-bottom: 24px;
+  color: #e5e7eb;
+}
+
+.article-content h2 {
+  font-size: 22px;
+  margin: 40px 0 14px;
+}
+
+.article-content blockquote {
+  border-left: 4px solid #0755b9;
+  padding-left: 20px;
+  margin: 40px 0;
+  font-size: 18px;
+  color: #d1d5db;
+  font-style: italic;
+}
+
+/* =========================
+   OPINION ARTICLE
+========================= */
+.opinion-article .article-header h1 {
+  font-size: 38px;
+}
+
+.opinion-article .lead {
+  font-size: 22px;
+  line-height: 1.6;
+  margin-bottom: 30px;
+  color: #f3f4f6;
+}
+
+/* =========================
+   SERIES NAV
+========================= */
+.series-nav {
+  display: flex;
+  gap: 14px;
+  margin: 20px 0 40px;
+}
+
+.series-nav a,
+.series-nav span {
+  padding: 6px 12px;
+  border-radius: 20px;
+  font-size: 13px;
+  text-decoration: none;
+  color: #9ca3af;
+  border: 1px solid #21262d;
+}
+
+.series-nav .active {
+  color: #0755b9;
+  border-color: #0755b9;
+}
+/* FEATURED OPINION */
+.featured-opinion {
+  padding: 22px 0;
+  font-size: 22px;
+  border-bottom: 1px solid #21262d;
+}
+
+.featured-opinion span {
+  font-size: 14px;
+  color: #9ca3af;
+  margin-top: 10px;
 }
