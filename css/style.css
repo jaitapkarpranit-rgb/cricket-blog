@@ -517,3 +517,34 @@ a {
 .coming-soon span {
   opacity: 0.8;
 }
+
+/* SIDE FEATURE – REAL ARTICLE */
+.feature-article {
+  background: #161b22;
+  border: 1px solid #21262d;
+  padding: 22px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  text-decoration: none;
+  color: #e5e7eb;
+}
+
+.feature-article:hover {
+  outline: 2px solid #0755b9;
+}
+
+.feature-article .feature-tag {
+  font-size: 11px;
+  letter-spacing: 1px;
+  color: #0755b9;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+
+.feature-article h3 {
+  font-size: 18px;
+  line-height: 1.3;
+  font-weight: 600;
+  text-transform: none;
+}
